@@ -1,6 +1,123 @@
-.marca{
-    margin-bottom: 0;
-    font-family:sans-serif;
-    font-style: oblique;
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Separar el logotipo y los elementos li */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
     font-weight: bold;
-}
+    cursor: pointer;
+    margin-left: 1rem; /* Agregar un margen izquierdo para separar del borde */
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Eliminar el margen */
+    padding: 0; /* Eliminar el relleno */
+  }
+  
+  .nav-item {
+    margin-right: 1rem;
+    position: relative;
+  }
+  
+  .nav-link {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .cart-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cart-icon {
+    width: 30px;
+    height: 24px;
+    margin-left: 1rem;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar {
+      justify-content: flex-start; /* Alinear el logotipo a la izquierda */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-collapse {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      padding: 1rem;
+      transition: opacity 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 100;
+    }
+  
+    .navbar-collapse.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-item {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (hover: hover) {
+    .navbar-nav .nav-link:hover {
+      color: #007bff;
+    }
+  
+    .navbar-nav .nav-link:focus {
+      color: #007bff;
+    }
+  
+    .navbar-nav .nav-item {
+      position: relative;
+      overflow: hidden;
+      margin-right: 0;
+    }
+  
+    .navbar-nav .nav-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background-color: rgba(52, 58, 64, 0.3);
+      transition: height 0.3s ease;
+    }
+  
+    .navbar-nav .nav-item:hover::before {
+      height: 100%;
+    }
+  }
+  

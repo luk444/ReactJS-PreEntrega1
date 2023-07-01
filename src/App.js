@@ -1,9 +1,8 @@
 import React from 'react';
+import { Navbar } from "./components/NavBar/NavBar.jsx";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { Navbar } from "./components/Navbar/Navbar";
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
-import "./components/Navbar/Navbar.css"
 import ProfileCard from './components/ProfileCard/ProfileCard';
 import './App.css';
 

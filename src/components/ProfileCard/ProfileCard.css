@@ -60,14 +60,17 @@
     margin: 10px;
   }
   
-  @media (max-width: 767px) {
+  @media (min-width: 767px) {
     .profile-list {
-      grid-template-columns: repeat(2, 1fr);
+      margin-top: 10%;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   
   @media (max-width: 479px) {
     .profile-list {
+      margin: 20%;
+      padding: 10px;
       grid-template-columns: 1fr;
     }
   }

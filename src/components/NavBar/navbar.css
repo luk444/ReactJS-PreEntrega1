@@ -10,6 +10,7 @@
     font-weight: bold;
     cursor: pointer;
     margin-left: 1rem; /* Agregar un margen izquierdo para separar del borde */
+    margin-right: 50%;
   }
   
   .navbar-toggler {

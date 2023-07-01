@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { CartWidget } from '../CartWidget/CartWidget';
-import './Navbar.css';
+import './navbar.css';
 
 export const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
-  };
+  };  
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <p className="navbar-brand">PANTAUTOMATION SHOP</p>
+        <p className="navbar-brand">GEETPEAK SHOP</p>
         <button
           className="navbar-toggler"
           type="button"
